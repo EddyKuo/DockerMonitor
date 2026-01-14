@@ -1,0 +1,278 @@
+/* DockerMonitor TUI Styles */
+
+/* ===== Global Styles ===== */
+Screen {
+    background: $surface;
+}
+
+/* ===== Main Container ===== */
+#main-container {
+    height: 100%;
+    width: 100%;
+    layout: vertical;
+}
+
+/* ===== Statistics Panel ===== */
+#stats-panel {
+    height: auto;
+    max-height: 15;
+    border: solid $primary;
+    background: $panel;
+    margin: 0 1;
+}
+
+/* ===== Content Area ===== */
+#content-area {
+    height: 1fr;
+    width: 100%;
+    layout: horizontal;
+    margin: 0 1 1 1;
+}
+
+/* ===== Host List ===== */
+#host-list {
+    width: 32;
+    height: 100%;
+    border: solid $accent;
+    background: $panel;
+    padding: 0;
+}
+
+#host-list > Static {
+    background: $boost;
+    padding: 1;
+    text-style: bold;
+    color: $text;
+}
+
+#host-list ListView {
+    height: 1fr;
+    background: $surface;
+    scrollbar-gutter: stable;
+}
+
+#host-list ListItem {
+    padding: 1;
+    height: auto;
+    background: $panel;
+}
+
+#host-list ListItem:hover {
+    background: $boost;
+}
+
+#host-list ListItem.-selected {
+    background: $accent;
+    text-style: bold;
+}
+
+/* ===== Main Content ===== */
+#main-content {
+    width: 1fr;
+    height: 100%;
+    layout: vertical;
+}
+
+/* ===== Container Table ===== */
+#container-table {
+    height: 100%;
+    width: 100%;
+    border: solid $primary;
+    background: $panel;
+}
+
+#container-table > Static {
+    background: $boost;
+    padding: 1;
+    text-style: bold;
+    color: $text;
+}
+
+#container-table DataTable {
+    height: 1fr;
+    background: $surface;
+}
+
+#container-table DataTable > .datatable--cursor {
+    background: $accent;
+}
+
+/* State colors */
+.running {
+    color: $success;
+}
+
+.exited {
+    color: $error;
+}
+
+.paused {
+    color: $warning;
+}
+
+.created {
+    color: $accent;
+}
+
+/* ===== Status Bar ===== */
+#status-bar {
+    height: 3;
+    dock: bottom;
+    background: $panel;
+    border-top: solid $primary;
+}
+
+#status-bar Static {
+    padding: 0 2;
+    height: 100%;
+    content-align: left middle;
+}
+
+.status-left {
+    dock: left;
+    width: 1fr;
+}
+
+.status-right {
+    dock: right;
+    width: auto;
+}
+
+/* ===== Detail Screen ===== */
+#detail-outer-container {
+    height: 100%;
+    width: 100%;
+    border: heavy $primary;
+    background: $panel;
+    padding: 0;
+    margin: 1;
+}
+
+#detail-container {
+    height: 100%;
+    width: 100%;
+    background: $surface;
+    padding: 1 2;
+}
+
+#detail-title {
+    padding: 1 0;
+    text-style: bold;
+    color: $accent;
+}
+
+#detail-content {
+    padding: 1 0;
+    height: auto;
+}
+
+#back-button {
+    margin: 2 0;
+    width: 20;
+}
+
+/* ===== Help Screen ===== */
+#help-container {
+    height: 100%;
+    width: 100%;
+    background: $surface;
+    padding: 1 2;
+}
+
+#help-content {
+    padding: 1;
+    height: auto;
+}
+
+#close-button {
+    margin: 2 0;
+    width: 20;
+}
+
+/* ===== Widgets ===== */
+.widget-title {
+    background: $boost;
+    padding: 1;
+    text-style: bold;
+    color: $text;
+    dock: top;
+}
+
+/* ===== Buttons ===== */
+Button {
+    width: auto;
+    min-width: 16;
+    margin: 0 1;
+}
+
+Button:hover {
+    background: $accent;
+}
+
+Button:focus {
+    text-style: bold;
+}
+
+/* ===== Scrollbars ===== */
+/* Textual uses its own scrollbar styling - no custom scrollbar CSS needed */
+
+/* ===== Loading / Empty States ===== */
+.loading {
+    content-align: center middle;
+    text-style: bold;
+    color: $text-muted;
+}
+
+.empty-state {
+    content-align: center middle;
+    color: $text-muted;
+    padding: 2;
+}
+
+/* ===== Markdown (Help Screen) ===== */
+Markdown {
+    padding: 1;
+}
+
+Markdown H1 {
+    color: $accent;
+    text-style: bold;
+}
+
+Markdown H2 {
+    color: $primary;
+    text-style: bold;
+}
+
+Markdown H3 {
+    color: $secondary;
+    text-style: bold;
+}
+
+Markdown Table {
+    background: $panel;
+}
+
+Markdown Code {
+    background: $panel;
+    color: $success;
+}
+
+/* ===== Notifications ===== */
+Notification {
+    background: $panel;
+    border: solid $primary;
+    padding: 1 2;
+}
+
+Notification.-information {
+    border: solid $accent;
+}
+
+Notification.-warning {
+    border: solid $warning;
+}
+
+Notification.-error {
+    border: solid $error;
+}

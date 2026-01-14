@@ -1,0 +1,46 @@
+# DockerMonitor - Python Dependencies
+
+# ===== TUI Framework =====
+# Textual - Modern Terminal User Interface framework
+textual>=0.47.0
+
+# Rich - Text formatting (included with Textual, but explicit for clarity)
+rich>=13.7.0
+
+# ===== SSH & Network =====
+# AsyncSSH - Asynchronous SSH client and server library
+asyncssh>=2.14.0
+
+# Cryptography - Required by asyncssh for SSH key handling
+cryptography>=41.0.0
+
+# ===== Configuration & Data =====
+# PyYAML - YAML parser for configuration files
+pyyaml>=6.0.1
+
+# python-dotenv - Environment variable management
+python-dotenv>=1.0.0
+
+# ===== Utilities =====
+# Click - Optional: for CLI argument parsing (alternative to argparse)
+click>=8.1.7
+
+# ===== Development & Testing (optional) =====
+# pytest - Testing framework
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# pytest-cov - Code coverage
+pytest-cov>=4.1.0
+
+# black - Code formatter
+black>=23.12.0
+
+# flake8 - Linting
+flake8>=6.1.0
+
+# mypy - Type checking
+mypy>=1.7.0
+
+# ===== Type Stubs =====
+types-pyyaml>=6.0.12

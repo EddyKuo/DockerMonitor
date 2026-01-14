@@ -1,0 +1,52 @@
+# DockerMonitor 主機配置檔案範例
+# 複製此檔案為 hosts.yaml 並填入實際的主機資訊
+
+jump_host:
+  hostname: your-jumphost.example.com  # 修改為您的跳板機位址
+  port: 22
+  username: your_username               # 修改為您的使用者名稱
+  key_file: ~/.ssh/id_rsa              # 修改為您的 SSH 私鑰路徑
+  timeout: 30
+
+target_hosts:
+  - name: server-01                     # 自訂主機名稱
+    hostname: 192.168.1.10             # 修改為實際 IP
+    port: 22
+    username: docker_user               # 修改為實際使用者
+    key_file: ~/.ssh/id_rsa
+    description: "Application Server"
+    tags:
+      - production
+      - application
+    enabled: true
+
+  # 新增更多主機...
+  # - name: server-02
+  #   hostname: 192.168.1.11
+  #   ...
+
+monitoring:
+  default_interval: 60
+  command_timeout: 30
+  max_concurrent_connections: 5
+  max_retries: 3
+  retry_delay: 5
+
+docker:
+  docker_bin: /usr/bin/docker
+  commands:
+    - name: ps_all
+      command: "docker ps -a --format '{{json .}}'"
+      description: "List all containers"
+    - name: ps_running
+      command: "docker ps --format '{{json .}}'"
+      description: "List running containers"
+    - name: stats
+      command: "docker stats --no-stream --format '{{json .}}'"
+      description: "Container resource usage"
+
+output:
+  default_format: table
+  output_dir: ./output
+  save_history: true
+  history_retention_days: 30

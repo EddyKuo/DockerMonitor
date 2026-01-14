@@ -1,0 +1,162 @@
+# English translations for DockerMonitor
+
+app:
+  title: "DockerMonitor - Docker Container Monitoring"
+
+# Main screen
+main:
+  title: "Docker Container Monitor"
+
+# Host list widget
+host_list:
+  title: "Hosts"
+  status_connected: "Connected"
+  status_disconnected: "Disconnected"
+  all_hosts: "All Hosts"
+
+# Container table widget
+container_table:
+  title: "Containers"
+  column_name: "Name"
+  column_image: "Image"
+  column_status: "Status"
+  column_state: "State"
+  column_host: "Host"
+  column_cpu: "CPU %"
+  column_memory: "Memory %"
+  column_ports: "Ports"
+  no_containers: "No containers found"
+
+# Stats panel widget
+stats_panel:
+  title: "Statistics"
+  total_hosts: "Total Hosts"
+  connected_hosts: "Connected"
+  total_containers: "Total Containers"
+  running_containers: "Running"
+  stopped_containers: "Stopped"
+  cpu_usage: "Avg CPU"
+  memory_usage: "Avg Memory"
+
+# Status bar widget
+status_bar:
+  ready: "Ready"
+  hosts: "Hosts"
+  containers: "Containers"
+  running: "Running"
+  shortcuts: "Press 'h' for help | 'r' to refresh | 'l' for language | 'q' to quit"
+
+# Detail screen
+detail:
+  title: "Container Details"
+  back_button: "Back (ESC)"
+  notice_title: "Notice"
+  no_info: "Container information not available."
+
+  # Basic information section
+  basic_info:
+    title: "Basic Information"
+    id: "ID"
+    name: "Name"
+    host: "Host"
+    image: "Image"
+    status: "Status"
+    state: "State"
+    running: "Running"
+    created: "Created"
+    yes: "Yes"
+    no: "No"
+
+  # Resource usage section
+  resource_usage:
+    title: "Resource Usage"
+    cpu_usage: "CPU Usage"
+    memory_usage: "Memory Usage"
+    memory_percent: "Memory %"
+    network_io: "Network I/O"
+    block_io: "Block I/O"
+
+  # Network section
+  network:
+    title: "Network"
+    ip_address: "IP Address"
+    gateway: "Gateway"
+    ports: "Ports"
+
+  # Volumes section
+  volumes:
+    title: "Volumes"
+    type: "Type"
+    source: "Source"
+    destination: "Destination"
+
+  # Environment section
+  environment:
+    title: "Environment Variables (first 10)"
+
+# Help screen
+help:
+  title: "Help - Keyboard Shortcuts"
+
+  navigation:
+    title: "Navigation"
+    tab: "TAB / Shift+TAB - Switch between widgets"
+    arrows: "Arrow Keys - Navigate in lists/tables"
+    enter: "ENTER - Select item / Show details"
+    escape: "ESC - Back / Close screen"
+
+  actions:
+    title: "Actions"
+    help: "h - Show this help"
+    refresh: "r - Refresh data"
+    filter: "f - Filter containers (not implemented)"
+    sort: "s - Cycle sort columns"
+    search: "/ - Search (not implemented)"
+    quit: "q - Quit application"
+
+  tips:
+    title: "Tips"
+    tip1: "• Click on a host to filter containers"
+    tip2: "• Click on a container to see details"
+    tip3: "• Data auto-refreshes based on configured interval"
+    tip4: "• Press 'r' to manually refresh data"
+
+  close_button: "Close (ESC)"
+
+# Messages and notifications
+messages:
+  refreshing: "Refreshing data..."
+  refreshed: "Refreshed {count} hosts"
+  no_hosts: "No target hosts configured"
+  filter_not_implemented: "Filter not yet implemented"
+  search_not_implemented: "Search not yet implemented"
+  sorted_by: "Sorted by: {column}"
+  error: "Error: {error}"
+  connecting: "Connecting..."
+  connected: "Connected to jump host"
+  language_switched: "Language switched to: {language}"
+  language_en: "English"
+  language_zh_tw: "繁體中文"
+  monitoring_hosts: "Monitoring hosts: {hosts}"
+  collecting_data: "Collecting container data..."
+
+# Container states
+states:
+  running: "running"
+  exited: "exited"
+  paused: "paused"
+  restarting: "restarting"
+  created: "created"
+  dead: "dead"
+  unknown: "unknown"
+
+# Common
+common:
+  ok: "OK"
+  cancel: "Cancel"
+  yes: "Yes"
+  no: "No"
+  back: "Back"
+  close: "Close"
+  loading: "Loading..."
+  na: "N/A"

@@ -1,0 +1,163 @@
+# 繁體中文翻譯 - DockerMonitor
+
+app:
+  title: "DockerMonitor - Docker 容器監控"
+
+# 主畫面
+main:
+  title: "Docker 容器監控"
+
+# 主機列表元件
+host_list:
+  title: "主機"
+  status_connected: "已連線"
+  status_disconnected: "未連線"
+  all_hosts: "所有主機"
+
+# 容器表格元件
+container_table:
+  title: "容器"
+  column_name: "名稱"
+  column_image: "映像檔"
+  column_status: "狀態"
+  column_state: "運行狀態"
+  column_host: "主機"
+  column_cpu: "CPU %"
+  column_memory: "記憶體 %"
+  column_ports: "連接埠"
+  no_containers: "找不到容器"
+
+# 統計面板元件
+stats_panel:
+  title: "統計資訊"
+  total_hosts: "主機總數"
+  connected_hosts: "已連線"
+  total_containers: "容器總數"
+  running_containers: "運行中"
+  stopped_containers: "已停止"
+  cpu_usage: "平均 CPU"
+  memory_usage: "平均記憶體"
+
+# 狀態列元件
+status_bar:
+  ready: "就緒"
+  hosts: "主機"
+  containers: "容器"
+  running: "運行中"
+  shortcuts: "按 'h' 說明 | 'r' 重新整理 | 'l' 切換語言 | 'q' 離開"
+
+# 詳細資訊畫面
+detail:
+  title: "容器詳細資訊"
+  back_button: "返回 (ESC)"
+  notice_title: "提示"
+  no_info: "容器資訊無法取得。"
+
+  # 基本資訊區塊
+  basic_info:
+    title: "基本資訊"
+    id: "ID"
+    name: "名稱"
+    host: "主機"
+    image: "映像檔"
+    status: "狀態"
+    state: "運行狀態"
+    running: "運行中"
+    created: "建立時間"
+    yes: "是"
+    no: "否"
+
+  # 資源使用區塊
+  resource_usage:
+    title: "資源使用狀況"
+    cpu_usage: "CPU 使用率"
+    memory_usage: "記憶體使用量"
+    memory_percent: "記憶體 %"
+    network_io: "網路 I/O"
+    block_io: "磁碟 I/O"
+
+  # 網路區塊
+  network:
+    title: "網路"
+    ip_address: "IP 位址"
+    gateway: "閘道"
+    ports: "連接埠"
+
+  # 磁碟區區塊
+  volumes:
+    title: "磁碟區"
+    type: "類型"
+    source: "來源"
+    destination: "目的地"
+
+  # 環境變數區塊
+  environment:
+    title: "環境變數（前 10 個）"
+
+# 說明畫面
+help:
+  title: "說明 - 鍵盤快捷鍵"
+
+  navigation:
+    title: "導覽"
+    tab: "TAB / Shift+TAB - 在元件間切換"
+    arrows: "方向鍵 - 在列表/表格中移動"
+    enter: "ENTER - 選擇項目 / 顯示詳細資訊"
+    escape: "ESC - 返回 / 關閉畫面"
+
+  actions:
+    title: "操作"
+    help: "h - 顯示此說明"
+    refresh: "r - 重新整理資料"
+    filter: "f - 篩選容器（尚未實作）"
+    sort: "s - 切換排序欄位"
+    search: "/ - 搜尋（尚未實作）"
+    quit: "q - 離開程式"
+
+  tips:
+    title: "提示"
+    tip1: "• 點擊主機以篩選容器"
+    tip2: "• 點擊容器以查看詳細資訊"
+    tip3: "• 資料會根據設定的間隔自動重新整理"
+    tip4: "• 按 'r' 可手動重新整理資料"
+
+  close_button: "關閉 (ESC)"
+
+# 訊息和通知
+messages:
+  refreshing: "正在重新整理資料..."
+  refreshed: "已重新整理 {count} 台主機"
+  no_hosts: "未設定目標主機"
+  filter_not_implemented: "篩選功能尚未實作"
+  search_not_implemented: "搜尋功能尚未實作"
+  sorted_by: "排序依據：{column}"
+  error: "錯誤：{error}"
+  connecting: "連線中..."
+  connected: "已連線至跳板主機"
+  language_switched: "語言已切換為：{language}"
+  language_en: "English"
+  language_zh_tw: "繁體中文"
+  monitoring_hosts: "監控主機: {hosts}"
+  collecting_data: "收集容器資料中..."
+  closing_connections: "關閉連線中..."
+
+# 容器狀態
+states:
+  running: "運行中"
+  exited: "已停止"
+  paused: "已暫停"
+  restarting: "重新啟動中"
+  created: "已建立"
+  dead: "已終止"
+  unknown: "未知"
+
+# 通用
+common:
+  ok: "確定"
+  cancel: "取消"
+  yes: "是"
+  no: "否"
+  back: "返回"
+  close: "關閉"
+  loading: "載入中..."
+  na: "無"
